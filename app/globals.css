@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --color-background-start: #F5F1EB;
+  --color-background-end: #E6F2FF;
+  --color-primary-text: #1A1A1A;
+  --color-secondary-text: #666666;
+  --color-card-background: #FFFFFF;
+  --color-platform-blue: #4F46E5;
+  --color-platform-purple: #8B5CF6;
+  --color-platform-green: #10B981;
+  --color-platform-orange: #F59E0B;
+  --color-search-border: #E5E7EB;
+
+  --font-sans: 'Inter', sans-serif;
+
+  --text-primary-heading: 32px;
+  --text-secondary-heading: 24px;
+  --text-body: 16px;
+  --text-profile-name: 18px;
+  --text-platform-tag: 14px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --radius-badge: 8px;
+  --radius-image-circle: 9999px; /* For circular profile images */
+
+  --shadow-card: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft drop shadow */
+}
+
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-primary-text);
+    background: linear-gradient(135deg, var(--color-background-start) 0%, var(--color-background-end) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+
+  h1 {
+    font-size: var(--text-primary-heading);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-text);
+  }
+
+  h2 {
+    font-size: var(--text-secondary-heading);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-text);
+  }
+
+  p {
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-secondary-text);
+  }
+}
